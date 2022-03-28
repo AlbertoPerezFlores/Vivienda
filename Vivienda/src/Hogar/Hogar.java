@@ -9,9 +9,6 @@ package Hogar;
  *
  * @author Paqui Elena
  */
-
-prueba
-
 public class Hogar {
 
     /**
