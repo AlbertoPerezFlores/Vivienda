@@ -10,22 +10,128 @@ package Hogar;
  * @author Paqui Elena
  */
 public class Vivienda {
-    double precio;
-    int numHabitaciones;
-    double superficie;
-    boolean parking;
-    String estado;
-    String propietario;
+    
+     /**@return the precio
+       Devuelve el precio
+     */
+    public double getPrecio() {
+        return precio;
+    }
+
+    /**@param precio the precio to set
+       Establece el precio
+     */
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    /**@return the numHabitaciones
+       Devuelve el numero de habitaciones
+     */
+    public int getNumHabitaciones() {
+        return numHabitaciones;
+    }
+
+    /**@param numHabitaciones the numHabitaciones to set
+       Establece numero de habitaciones
+     */
+    public void setNumHabitaciones(int numHabitaciones) {
+        this.numHabitaciones = numHabitaciones;
+    }
+
+    /**@return the superficie
+       Devuelve la superficie
+     */
+    public double getSuperficie() {
+        return superficie;
+    }
+
+    /**@param superficie the superficie to set
+       Establece la superficie
+     */
+    public void setSuperficie(double superficie) {
+        this.superficie = superficie;
+    }
+
+    /**@return the parking
+       Devuelve parking
+     */
+    public boolean isParking() {
+        return parking;
+    }
+
+    /**@param parking the parking to set
+       Establece parking
+     */
+    public void setParking(boolean parking) {
+        this.parking = parking;
+    }
+
+    /**@return the estado
+       Devuelve estado
+     */
+    public String getEstado() {
+        return estado;
+    }
+
+    /**@param estado the estado to set
+       Establece estado
+     */
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    /**@return the propietario
+       Devuelve propietario
+     */
+    public String getPropietario() {
+        return propietario;
+    }
+
+    /**@param propietario the propietario to set
+       Establece propietario
+     */
+    public void setPropietario(String propietario) {
+        this.propietario = propietario;
+    }
+    
+    private double precio;
+    private int numHabitaciones;
+    private double superficie;
+    private boolean parking;
+    private String estado;
+    private String propietario;
+    private double descuento = 0.05;
     
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
     
+    public Vivienda(double p, int nh, double s, boolean pk, String st, String pr)
+    {
+    this.precio = p;
+    this.numHabitaciones = nh;
+    this.superficie = s;
+    this.parking = pk;
+    this.estado = st;
+    this.propietario = pr;
+    }
+    
     public void actualizarPrecio()
     {
-        precio = precio - precio * 0.05;
+        precio = precio - precio * descuento;
     }
 
-    
+    public void imprimirvivienda()
+    {
+        System.out.println("__________________________");
+        System.out.println("Precio: "+ this.precio);
+        System.out.println("Numero de habitaciones: "+ this.numHabitaciones);
+        System.out.println("Superficie: "+ this.superficie +" metros cuadrados");
+        System.out.println("Parking: "+ this.parking);
+        System.out.println("Estado: "+ this.estado);
+        System.out.println("Propietario: "+ this.propietario);
+    }
+
 }
