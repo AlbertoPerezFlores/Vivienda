@@ -110,17 +110,37 @@ public class Vivienda {
     
     public Vivienda(double p, int nh, double s, boolean pk, String st, String pr)
     {
+        /**
+        Establecemos el valor introducido al atributo tipo double referente al precio
+        */
     this.precio = p;
+        /**
+        Establecemos el valor introducido al atributo tipo entero referente al numero de habitaciones
+        */
     this.numHabitaciones = nh;
+        /**
+        Establecemos el valor introducido al atributo tipo double referente a la superficie
+        */
     this.superficie = s;
+        /**
+        Establecemos el valor introducido al atributo tipo booleano referente al parking
+        */
     this.parking = pk;
+        /**
+        Establecemos el valor introducido al atributo tipo string/cadena referente al estado
+        */
     this.estado = st;
+        /**
+        Establecemos el valor introducido al atributo tipo string referente al propietario
+        */
     this.propietario = pr;
     }
     
     public void actualizarPrecio()
     {
+        /**
         precio = precio - precio * descuento;
+        */
     }
 
     public void imprimirvivienda()
