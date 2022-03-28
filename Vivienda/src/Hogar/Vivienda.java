@@ -9,7 +9,7 @@ package Hogar;
  *
  * @author Paqui Elena
  */
-//comprobacion del push
+//comprobacion del push 1.0
 
 public class Vivienda {
     double precio;
