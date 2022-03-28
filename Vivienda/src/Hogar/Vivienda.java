@@ -9,16 +9,6 @@ package Hogar;
  *
  * @author Paqui Elena
  */
-
-
-
-//editado desde hit
-
-
-
-
-
-
 public class Vivienda {
     double precio;
     int numHabitaciones;
