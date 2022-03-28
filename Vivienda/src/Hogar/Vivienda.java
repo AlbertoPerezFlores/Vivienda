@@ -9,8 +9,6 @@ package Hogar;
  *
  * @author Paqui Elena
  */
-//comprobacion del push 1.0d
-
 public class Vivienda {
     double precio;
     int numHabitaciones;
